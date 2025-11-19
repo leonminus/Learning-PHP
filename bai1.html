@@ -1,26 +1,53 @@
 <html>
     <head>
-
+        <title>Đăng ký tài khoản</title>
     </head>
-
+    
     <style type="text/css">
         h1{
             color:red;
             text-align: center;
         }
+        p{
+            color:tomato;
+            text-align: center;
+        }
+        form{
+            text-align: center;
+        }
+        label{
+            /* text-align: center; */
+        }
     </style>
+
     <body>
-        <h1>Hello</h1>
-        <pre>
-        Công cha như núi Thái Sơn,
-        Nghĩa mẹ như nước trong nguồn chảy ra. 
-        Một lòng thờ mẹ, kính cha,
-        Cho tròn chữ hiếu mới là đạo con.
-        </pre>
-
-        
+        <h1>Đăng ký tài khoản!</h1>
+    <p>Nhập và lựa chọn thông tin đăng ký</p>
+        <form>
+            <input type="text" id="firstname" name="firstname" placeholder="Tên">
+            <input type="text" id="lastname" name="lastname" placeholder="Họ đệm"><br><br>
+            <input type="text" id="email" name="email" placeholder="Địa chỉ Email">
+            <input type="text" id="phonenumber" name="phonenumber" placeholder="SĐT"><br><br>
     
-        
+            <label>Chọn thành phố</label>
+        <select>
+            <option value="" disabled selected>Tỉnh</option>
+            <option value="Hanoi">Hà Nội</option>
+            <option value="Hanoi">Hải Dương</option>
+            <option value="Hanoi">Hải Phòng</option>
+            <option value="Hanoi">Hà Giang</option>
+            <option value="Hanoi">Quảng Ninh</option>
+            <option value="Hanoi">Hưng Yên</option>
+            <option value="Hanoi">Vĩnh Phúc</option>
+            <option value="Hanoi">Phú Thọ</option>
+            <option value="Hanoi">Nha Trang</option>
+        </select>
+    <br><br>
 
+    <textarea id="node" name="node" rows="10" cols="50" placeholder="Ghi chú"></textarea>
+    <br><br>
+
+    <input type="button" id="btndangki" name="dangky" value="Đăng ký">
+</form>
     </body>
 </html>
