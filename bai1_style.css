@@ -1,0 +1,67 @@
+
+        h1{
+            color:red;
+            text-align: center;
+            text-shadow: 3px 3px 3px violet ;
+            
+        }
+        #prt1{
+            color:tomato;
+            text-align: center;
+            font-style: italic;
+        }
+        #form1{
+            width: 500px;
+            text-align: center;
+            padding: 10px;
+            border: 2px solid black;
+            border-radius: 15px;
+            margin: auto;
+        }
+        
+        label{
+            text-align: center;
+        }
+        caption{
+            color: red;
+            font-weight: bold;
+            font-size: 30px;
+        }
+        thead{
+            background-color: aqua;
+            color: darkorange;
+            font-weight: bold;
+            font-size: 20px;
+        }
+        #tbd1{
+            background-color: beige;
+            color: teal;
+        }
+        #trow1{
+            background-color: chartreuse;
+            color: brown;
+            border: 10px;
+        }
+
+        #tb1{
+            border: 0.15cm solid black;
+            margin: auto;
+            padding: 10px;
+            border-radius: 15px;
+            
+        }
+
+        .khoa{
+            text-align: center;
+        }
+        tfoot{
+            background-color: azure;
+            color: brown;
+            font-style: italic;
+            font-weight: bold;
+        }
+
+        #tb2{
+            width: 500px;
+            margin: auto;
+        }

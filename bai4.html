@@ -1,0 +1,93 @@
+<html>
+    <head>
+        <!-- Nhúng liên kết tới file bai4.js -->
+        <script lang="javascript" src="bai4.js"></script>
+    </head>
+
+    <body>
+        <!-- cach 1 Inline: Click thi moi chay, mo trang khong chay-->
+        <button id="btn1" onclick="alert('Hello')">Xin chao</button>
+        <button id="btn2" onclick="alert('Hello')">Xin chao 2</button>
+
+        <!-- cach 2 Internal: khi mo trang va Click thi deu chay-->
+        <script lang="javascript">
+
+            
+
+            // alert('Hello');
+
+            var x = 10;
+            var y = 20;
+            var z = x + y;
+
+            var n = parseInt("50")
+            parseInt('ket qua: ' + z);
+
+            // ham thong thuong
+            // function add(a,b){
+            //     return a + b;
+            // }
+            // console.log(add(5,3));
+
+            //Arrow function: gọn hơn, dung trong nhieu truong hop phuc tap
+            
+            let add = (a,b) => a+b;
+
+            console.log("ket qua: a + b = " + add(4, 6));
+
+            let ketqua = add(4, 6); // gọi hàm để lấy số
+
+            // Tạo thẻ <p> mới
+            
+
+            let p = document.createElement("p");
+            p.textContent = "Kết quả: " + ketqua;
+
+            // Thêm vào body
+            document.body.appendChild(p);
+
+
+
+            for (let i=0; i<=10; i++){
+                if(i % 2 == 0){
+                    continue;
+                }
+                console.log(i);
+            }
+            let p1 = document.createElement("P")
+            p1.textContent = "Kết quả: " + i;
+
+            const sayHi = (name) => {
+                console.log("Hi" + name);
+            }
+            sayHi(" Web cua Minh");
+            
+            
+
+        </script>
+
+        <button id="btn3"> Nhấn vào đây</button>
+            <script>
+                document.getElementById("btn3").onclick = function(){
+                    alert("Sự kiện đã được kích hoạt");
+                };
+            </script>
+        
+        <form id="form1">
+            <input type="text" id="name" placeholder="Nhap ten: ">
+            <button type="submit">Gui</button>
+        </form>
+
+        <script>
+            document.getElementById("form1")
+                .addEventListener("submit", function (event){
+                    let name = document.getElementById("name").value;
+                    if (name === ""){
+                        alert("Vui long nhap ten!!!");
+                        event.preventDefault(); //Ngăn chặn gửi form
+                    }
+                });
+        </script>
+
+    </body>
+</html>

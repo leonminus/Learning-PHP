@@ -1,45 +1,16 @@
 <html>
     <head>
         <title>Đăng ký tài khoản</title>
+        <link rel="stylesheet" href="bai1_style.css">
     
-    
-    <style type="text/css">
-        h1{
-            color:red;
-            text-align: center;
-            text-shadow: 3px 3px 3px violet ;
-            
-        }
-        p{
-            color:tomato;
-            text-align: center;
-            font-style: italic;
-        }
-        form{
-            text-align: center;
-            
-        }
-        
-        label{
-            text-align: center;
-        }
-        caption{
-            color: red;
-            font-weight: bold;
-            font-size: 30px;
-        }
-        thead{
-            font-weight: bold;
-            font-size: 20px;
-        }
-    </style>
 
     </head>
 
     <body>
-        <h1>Đăng ký tài khoản!</h1>
-    <p>Nhập và lựa chọn thông tin đăng ký</p>
-        <form>
+        <h1 ip="head1">Đăng ký tài khoản!</h1>
+        <p id="prt1">Nhập và lựa chọn thông tin đăng ký</p>
+
+        <form id="form1">
             <input type="text" id="firstname" name="firstname" placeholder="Tên">
             <input type="text" id="lastname" name="lastname" placeholder="Họ đệm"><br><br>
             <input type="text" id="email" name="email" placeholder="Địa chỉ Email">
@@ -67,37 +38,154 @@
             <input type="button" id="btndangki" name="dangky" value="Đăng ký">
         </form>
 
-        <table border="7" align="center" style="width: 100%; height: 15;" >
+
+        <table border="1" id="tb1">
+        <thead>
+            <tr>
+                <th>
+                    ID
+                </th>
+                <th>
+                    Họ và tên
+                </th>
+                <th>
+                    Điểm
+                </th>
+                <th>
+                    Xếp loại
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="khoa" colspan="4">
+                    Khóa A
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    1
+                </td>
+                <td>
+                    Trần Tiến Tài
+                </td>
+                <td>
+                    7
+                </td>
+                <td rowspan="2">
+                    Khá
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    2
+                </td>
+                <td>
+                    Phạm Mạnh Khoa
+                </td>
+                <td>
+                    8
+                </td>
+            </tr>
+            <tr>
+                <td class="khoa" colspan="4">
+                    Khóa B
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    3
+                </td>
+                <td>
+                    Trần Văn Hưng
+                </td>
+                <td>
+                    5
+                </td>
+                <td rowspan="2">
+                    Trung bình
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    4
+                </td>
+                <td>
+                    Đỗ Đức Thành
+                </td>
+                <td>
+                    10
+                </td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2">
+                    TỔNG CỘNG
+                </td>
+                <td>
+                    7.5
+                </td>
+                <td>
+                    Khá
+                </td>
+            </tr>
+        </tfoot>
+    </table>
+
+
+        <table border="7" align="center" style="width: 100%; height: 15;" id="tb2">
         
-        <caption >Danh sách thành viên nhóm 5</caption>
+        <caption >Danh sách thành viên nhóm 12</caption>
         <thead>
             <tr>
                 <th>STT</th>
                 <th>Họ và Tên</th>
                 <th>MSV</th>
+                <th>Lớp</th>
             </tr>
         </thead>
         
-        <tbody>
+        <tbody >
             <tr>
                 <td>1</td>
                 <td>Phạm Quang Minh</td>
                 <td>74DCTT22254</td>
+                <td>74DCTT24</td>
                 
             </tr>
-            <tr>
+            <tr id="trow1">
                 <td>2</td>
                 <td>Nguyễn Trọng Đức</td>
                 <td>74DCTT22275</td>
+                <td>74DCTT24</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Trần Phan Anh</td>
+                <td>74DCTT22275</td>
+                <td>74DCTT24</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Phạm Văn Đạt</td>
+                <td>74DCTT22275</td>
+                <td>74DCTT24</td>
             </tr>
 
         </tbody>
         
         <tfoot>
             <tr>
-                <td colspan="3" rowspan="1">Tổng số: 02 sinh viên</td>
+                <td colspan="4" rowspan="1">Tổng số: 04 sinh viên</td>
             </tr>
         </tfoot>
 
+        <table>
+            <thead></thead>
+            <tbody>
+                <tr></tr>
+            </tbody>
+        </table>
     </body>
 </html>
