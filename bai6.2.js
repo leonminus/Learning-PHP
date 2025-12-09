@@ -1,0 +1,27 @@
+
+let change = false;
+
+document.getElementById("toggleBtn").addEventListener('click', function() {
+    const title = document.getElementById('title');
+    const descriptions = document.querySelectorAll('.description');
+    const btn = this;
+
+    if (!changed) {
+        // đổi
+        title.textContent = 'Nội dung đã thay đổi:';
+        title.style.color = 'blue';
+        title.style.fontWeight = 'bold';
+        btn.textContent = 'Đã thay đổi!';
+        descriptions.forEach(d => d.classList.add('highlight'));
+        changed = true;
+    } else {
+        // phục hồi
+        title.textContent = 'Tiêu đề gốc';
+        title.style.color = '';
+        title.style.fontWeight = '';
+        btn.textContent = 'Gửi';
+        descriptions.forEach(d => d.classList.remove('highlight'));
+        changed = false;
+    }
+
+});
