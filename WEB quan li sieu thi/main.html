@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Task Bar với Dropdown</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #0071ce;
+      padding: 10px 20px;
+      color: white;
+    }
+    .navbar .logo {
+      font-size: 20px;
+      font-weight: bold;
+    }
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+    }
+    .navbar ul li {
+      position: relative; /* cần cho dropdown */
+      margin-left: 20px;
+    }
+    .navbar ul li a {
+      text-decoration: none;
+      color: white;
+      font-weight: 500;
+      padding: 8px;
+      display: block;
+    }
+    .navbar ul li a:hover {
+      background-color: #005fa3;
+      border-radius: 4px;
+    }
+    /* Dropdown menu */
+    .navbar ul li ul {
+      display: none;
+      position: absolute;
+      top: 100%; /* nằm dưới mục cha */
+      left: 0;
+      background-color: #0071ce;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      min-width: 150px;
+      border-radius: 4px;
+    }
+    .navbar ul li ul li a {
+      padding: 10px;
+    }
+    .navbar ul li:hover ul {
+      display: block; /* hiện dropdown khi hover */
+    }
+  </style>
+</head>
+<body>
+  <div class="navbar">
+    <div class="logo">Walmart Careers</div>
+    <ul>
+      <li><a href="#">Trang chủ</a></li>
+      <li>
+        <a href="#">Việc làm ▼</a>
+        <ul>
+          <li><a href="#">Full time</a></li>
+          <li><a href="#">Part time</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Về chúng tôi</a></li>
+      <li><a href="#">Liên hệ</a></li>
+    </ul>
+  </div>
+</body>
+</html>
