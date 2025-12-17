@@ -17,14 +17,22 @@
     .number {
       margin-right: 6px;
     }
+    Utt80nam
   </style>
 </head>
 <body>
   <?php
     echo '<div>';
-    for ($i = 1; $i <= 100; $i++) {
-        $class = ($i % 2 === 0) ? 'even' : 'odd';
-        echo "<span class=\"number $class\">$i</span>";
+    for ($i = 1; $i <= 100; $i++) { 
+
+      if( $i % 2 == 0){
+        echo "<b> <span class = 'number' style = 'color: red' > $i </div>";
+      }
+      else{
+        echo "<b> <span class = 'number' style = 'color: blue' > $i </div>";
+      }
+        // $class = ($i % 2 === 0) ? 'even' : 'odd';
+        // echo "<span class=\"number $class\">$i</span>";
     }
     echo '</div>';
   ?>
